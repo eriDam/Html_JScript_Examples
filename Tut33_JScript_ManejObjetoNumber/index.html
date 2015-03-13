@@ -16,9 +16,18 @@ https://www.youtube.com/watch?v=3TFGvu-ieUE&index=33&list=PLBF55EAEDAA5938AA
         Con el objeto number podemos manipular nuestro numero con los valores primitivos. 
         Creamos un objeto number con new
        */
-        var n = new Number(123);
+        var n = new Number(123.1560);
         document.write("El valor es: " + n);
          document.write("<br/>");
+
+        //Controlo el numero de decimales que voy a mostrar en este caso 2 y 5
+        var decimales2 = n.toFixed(2);//Si no tiene decimales el num, agregará 2 ceros, como n si que tiene los redondea a 2
+        var decimales5 = n.toFixed(5);
+        document.write(decimales2);
+        document.write(decimales5);
+        document.write("<br/>");
+
+
         //Si queremos mostrar el numero con otra base:
         //BINARIO base 2, OCTAL 8, DECIMAL 10, HEXADECIMAL 16
         
