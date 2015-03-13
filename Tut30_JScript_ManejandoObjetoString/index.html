@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- Tutorial Javascript - 31 - Cambiar texto a Mayúscula y Minúscula 
+https://www.youtube.com/watch?v=X56ehxDFlNc&list=PLBF55EAEDAA5938AA&index=31
+-->
+<html>
+<head>
+  <title>Tuto Javascript</title>
+  <meta charset="UTF-8">
+  <script type="text/javascript">
+  //Comentario para indicar jScript al navegador
+  <!-- 
+     /* 
+       Entre comentarios podemos poner:
+       Desarrollado por: eriDev 
+       Fecha: 12/03/2015 
+       */
+
+       //Utilizamos objetos, un objecto string, utilizamos los metodos y propiedades que tienen estos objetos
+       
+       //Creo el string de esta manera, pero ahora no voy a crear un objeto, si no usar sus metodos, por eso lo comento
+        var mensajeInicio =  "Bienvenido, escribe un texto y pulsa el botón que quieras convertir" ;
+         alert(mensajeInicio);
+       
+      
+      //Ejemplo1
+    /*  function mostrar()
+      {
+        var mensaje = "BienVEniDO aL CAMBIO de estilo DE CARACTERES";
+         //mensaje es la variable, almacena el  valor de la cantidad de caracteres que tiene este objeto
+        //alert(mensaje.length);//me da el tamaño, mostrara un 10
+       
+        var nuevo_mensaje = mensaje.toLowerCase();
+        
+        var mensaje_mayuscula = mensaje.toLocaleUpperCase();
+        
+        alert("Tu texto convertido a Minusculas: " +nuevo_mensaje);//Este metodo de string cambia el texto a minusculas, NO MODIFICA EL VALOR DE LA VAR, solo lo muestra cambiado
+
+        alert("Tu texto convertido a Mayusculas: " +mensaje_mayuscula);//Este metodo de string cambia el texto a mayusculas NO MODIFICA EL VALOR DE LA VAR, solo lo muestra cambiado
+        
+      }//Fin funcion*/
+
+      //Cambiara el formato del texto y lo mostrará en el tetxBox
+      function convertir(tipo)
+      {
+        var mensaje = document.getElementById("mensaje")
+        var texto = mensaje.value;//value obtiene el valor el tetxo del textBox
+        if (tipo == 1) {
+          mensaje.value = texto.toUpperCase();
+         // alert("La conversión es: " + texto);
+        }
+        else if (tipo == 2)
+        {
+          mensaje.value = texto.toLowerCase();
+          //alert("La conversión es: " + texto);
+        }
+      }
+
+
+        //-->
+      </script>
+    </head>
+    <body>
+      <!--Escribimos mensaje para el caso de que el navegador no soporte Javascript o esté desactivado-->
+      <noscript>
+        <p>Tu Navegador no soporta Javascript</p>
+        <p>Trata de actualizar tu navegador o activarlo Javascript</p>
+      </noscript>
+      <form>
+        <input type="text" id="mensaje" value="" />
+
+        <input type="button" id="botonMi" value="Convertir Minúscula"
+        onclick="convertir(2);" / >
+
+         <input type="button" id="botonM" value="Convertir Mayúsculas"
+        onclick="convertir(1);" / >
+
+
+
+      </form>
+       
+
+    </body>
+    </html>

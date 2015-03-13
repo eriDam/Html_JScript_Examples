@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- Tutorial Javascript - 30 - Introduccion y Manejando Objeto String 
+https://www.youtube.com/watch?v=oL2ZE1p3vyE&index=30&list=PLBF55EAEDAA5938AA
+-->
+<html>
+<head>
+  <title>Tuto Javascript</title>
+  <meta charset="UTF-8">
+  <script type="text/javascript">
+  //Comentario para indicar jScript al navegador
+  <!-- 
+     /* 
+       Entre comentarios podemos poner:
+       Desarrollado por: eriDev 
+       Fecha: 12/03/2015 
+       */
+
+       //Utilizamos objetos, un objecto string, utilizamos los metodos y propiedades que tienen estos objetos
+       
+       //Creo el string de esta manera, pero ahora no voy a crear un objeto, si no usar sus metodos, por eso lo comento
+       //var mensaje = new String("Bienvenido");
+       
+       
+      
+      
+      function mostrar()
+      {
+        var mensaje =document.getElementById("mensaje");
+         //mensaje es la variable, almacena el  valor de la cantidad de caracteres que tiene este objeto
+        //alert(mensaje.length);//me da el tamaño, mostrara un 10
+       
+       
+       //alert(mensaje.value.length);//representa nuestro texto y el tamaño del texto
+
+       //Para acortar esta sentencia se puede poner
+       var texto = mensaje.value;
+       alert(texto.length);
+      }
+
+
+        //-->
+      </script>
+    </head>
+    <body>
+      <!--Escribimos mensaje para el caso de que el navegador no soporte Javascript o esté desactivado-->
+      <noscript>
+        <p>Tu Navegador no soporta Javascript</p>
+        <p>Trata de actualizar tu navegador o activarlo Javascript</p>
+      </noscript>
+      <form>
+        <input type="tetx" id="mensaje" value="" />
+        <input type="button" id="boton" value="Mostrar"
+        onclick="mostrar();" / >
+
+
+      </form>
+       
+
+    </body>
+    </html>

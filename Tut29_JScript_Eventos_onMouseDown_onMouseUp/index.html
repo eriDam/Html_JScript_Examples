@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<!-- Tutorial Javascript - 28 - Obtener una Etiqueta
+<!-- Tutorial Javascript - 29 - Eventos onMouseDown y onMouseUp
 
- https://www.youtube.com/watch?v=Lq_O0RC3vhk&index=28&list=PLBF55EAEDAA5938AA
+ https://www.youtube.com/watch?v=0v-GeeOnf50&list=PLBF55EAEDAA5938AA&index=29
 -->
 <html>
 <head>
@@ -14,22 +14,30 @@
        Entre comentarios podemos poner:
        Desarrollado por: eriDev 
        Fecha: 12/03/2015 
-      
        */
-        //Funcion getElementById Podemos obtener una etiqueta y hacer lo que queramos con ella
-        document.getElementById();
 
-        //Creo una función para el botón
-        function mostrar_texto()
-        {
-          
-          //Cogemos el texto que ha pasado el usuario por la caja de texto y la deja en blanco
-          var texto = document.getElementById("texto");
-          alert( texto.value );
-          texto.value = " ";
+       //El evento onMouseDown, es cuando presionamos el mouse  encima del objeto, crearemos una funcion que vaa controlar los dos eventos, tambien crearemos el mensaje para el evento onMouseUp
+       function mostrar_evento(tipo){
+        var mensaje = document.getElementById("mensaje");
+        //Creo otra variable para cambiar el texto del botón
+        var boton = document.getElementById("boton")
+        if (tipo ==1) {
+          mensaje.value = "Mouse presionado";
+          //Cambio el texto del boton en caso de que se ecoja funcion tipo 1
+          boton.value = "Sueltame!!";
+        }
+        else if (tipo == 2){
+          //Mostramos el texto en la caja de texto
+          mensaje.value = "Has levantado el mouse"; 
+          //Cambio el texto del boton en caso de que se ecoja funcion tipo 1
+          boton.value = "Presioname!!";
         }
 
-      
+      }
+
+        //Funcion para el 
+        
+
         //-->
       </script>
     </head>
@@ -39,17 +47,13 @@
         <p>Tu Navegador no soporta Javascript</p>
         <p>Trata de actualizar tu navegador o activarlo Javascript</p>
       </noscript>
+      
+      <!-- caja de texto -->
+      <input type="text" id="mensaje" value="" />   
+      
+      <input type="button" id="boton" value="Presioname"
+      onMouseDown="mostrar_evento(1);" onMouseUp="mostrar_evento(2);"/>   
+      
 
-        <form>
-          <label for="texto">Texto</label>
-          <input type="text" id="texto" value="" />
-
-          <label for="boton"></label>
-          <input type="button" id="boton" value="Mostrar Texto"   
-          onclick="mostrar_texto();" 
-
-          />  
-
-        </form>
     </body>
     </html>
