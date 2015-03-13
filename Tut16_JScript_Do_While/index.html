@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- Tutorial Javascript - 16 - Ciclo Do While
+  https://www.youtube.com/watch?v=A0-g6vSY9eo&list=PLBF55EAEDAA5938AA&index=16 -->
+  <html>
+  <head>
+    <title>Tuto Javascript</title>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+  //Comentario paran el navegador
+  //
+  <!-- 
+     /* 
+       Entre comentarios podemos poner:
+       Desarrollado por: eriDev 
+       Fecha: 11/03/2015
+       Descripcion de Ciclo Do while:
+       Un ciclo es una sentencia que se repite según una condición, cuando queremos ejecutar mas de un codigo a la vez,  Do while, primero lo hace y despues comprueba la condición, ej si el num es positivo imprime todos lo num menores hasta 0
+       */
+
+       var numero = 11;
+       if(numero>0){
+        do{
+          document.write("<br/>En esta vuelta del ciclo numero vale: "+numero);
+          numero--; 
+        }while(numero>=0);
+      }else{
+       document.write("<br/>No es mayor que 0"); 
+     } 
+        //-->
+      </script>
+    </head>
+    <body>
+      <!--Escribimos mensaje para el caso de que el navegador no soporte Javascript o esté desactivado-->
+      <noscript>
+        <p>Tu Navegador no soporta Javascript</p>
+        <p>Trata de actualizar tu navegador o activarlo Javascript</p>
+      </noscript>
+    </body>
+    </html>

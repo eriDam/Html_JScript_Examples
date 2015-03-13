@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- Tutorial Javascript - 19 - Cajas de Dialogos
+  https://www.youtube.com/watch?v=R95p77GMsLw&list=PLBF55EAEDAA5938AA&index=19-->
+  <html>
+  <head>
+    <title>Tuto Javascript</title>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+  //Comentario para indicar jScript al navegador
+  <!-- 
+     /* 
+       Entre comentarios podemos poner:
+       Desarrollado por: eriDev 
+       Fecha: 11/03/2015
+       Descripcion de Cajas de Dialogo;
+       -Existen 3 cajas de dialogo: 
+            *Caja de Alerta: Muestra un mensaje y obliga a  pulsar ok para poder continuar
+            *Caja de confirmacion: Muestra ventana con dos botones Yes/No
+            *Caja de solicitud:
+       */
+      
+      //Caja de alerta
+      alert("Iniciando ciclo");
+      var a = 0;
+      while(a < 10){
+        //document.write(a + "<br/>");
+        alert("Número: "+ a);//Saca el ciclo en 10 ventanas con el aviso al usuario de si no quiere que el programa le muestre ventanas
+        a++;
+      }
+      alert("Terminado ciclo");
+
+      //Caja de Confirmación
+        var entrar = confirm("Esta página es para 18 o +. ¿Deseas entrar? ");
+        if(entrar){ //Entrar sera el true/ ok
+          alert("Bienvenido a la página de + 18");
+        }else{
+          alert("Ok, saldrás de la página");
+        }
+
+
+        //Caja de solicitud
+        //Vamos a pedir al user que escriba su nombre
+        var nombre = prompt("Escribe tu nombre: ", "Sin nombre");//Esta funcion tiene otro parametro, si el user lo deja en blanco el cuadro colocará un valor por default
+        if(nombre == ""){
+          alert("Debes escribir un nombre");
+        }else{
+          //Como no queremos nombre vacío, en caso de que lo borre
+        var entrar2= confirm("Hola " + nombre + "  esta página es para +18 años, ¿Quieres entrar? ");
+          if(entrar2){ //Entrar sera el true/ ok
+          alert("Bienvenido a la página de + 18 " + nombre);
+        }else{
+          alert("Ok, saldrás de la página");
+        }
+        }
+        
+
+        //-->
+      </script>
+    </head>
+    <body>
+      <!--Escribimos mensaje para el caso de que el navegador no soporte Javascript o esté desactivado-->
+      <noscript>
+        <p>Tu Navegador no soporta Javascript</p>
+        <p>Trata de actualizar tu navegador o activarlo Javascript</p>
+      </noscript>
+    </body>
+    </html>

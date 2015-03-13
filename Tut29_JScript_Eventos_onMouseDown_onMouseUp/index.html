@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- Tutorial Javascript - 28 - Obtener una Etiqueta
+
+ https://www.youtube.com/watch?v=Lq_O0RC3vhk&index=28&list=PLBF55EAEDAA5938AA
+-->
+<html>
+<head>
+  <title>Tuto Javascript</title>
+  <meta charset="UTF-8">
+  <script type="text/javascript">
+  //Comentario para indicar jScript al navegador
+  <!-- 
+     /* 
+       Entre comentarios podemos poner:
+       Desarrollado por: eriDev 
+       Fecha: 12/03/2015 
+      
+       */
+        //Funcion getElementById Podemos obtener una etiqueta y hacer lo que queramos con ella
+        document.getElementById();
+
+        //Creo una función para el botón
+        function mostrar_texto()
+        {
+          
+          //Cogemos el texto que ha pasado el usuario por la caja de texto y la deja en blanco
+          var texto = document.getElementById("texto");
+          alert( texto.value );
+          texto.value = " ";
+        }
+
+      
+        //-->
+      </script>
+    </head>
+    <body>
+      <!--Escribimos mensaje para el caso de que el navegador no soporte Javascript o esté desactivado-->
+      <noscript>
+        <p>Tu Navegador no soporta Javascript</p>
+        <p>Trata de actualizar tu navegador o activarlo Javascript</p>
+      </noscript>
+
+        <form>
+          <label for="texto">Texto</label>
+          <input type="text" id="texto" value="" />
+
+          <label for="boton"></label>
+          <input type="button" id="boton" value="Mostrar Texto"   
+          onclick="mostrar_texto();" 
+
+          />  
+
+        </form>
+    </body>
+    </html>

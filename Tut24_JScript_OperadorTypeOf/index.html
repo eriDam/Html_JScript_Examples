@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- Tutorial Javascript - 23 - Funciones
+  https://www.youtube.com/watch?v=CUasvVoP618&index=23&list=PLBF55EAEDAA5938AA 
+-->
+<html>
+<head>
+  <title>Tuto Javascript</title>
+  <meta charset="UTF-8">
+  <script type="text/javascript">
+  //Comentario para indicar jScript al navegador
+  <!-- 
+     /* 
+       Entre comentarios podemos poner:
+       Desarrollado por: eriDev 
+       Fecha: 12/03/2015
+       Para realizar una funcion que devuelva /return un valor
+       */
+       function sumar (a, b) {
+      // body...
+      var r = a + b;
+      return r;
+    }
+    var resultado1 = sumar(10, 15) ;
+    alert(resultado1);
+
+   //Misma funcion diferente forma
+    function sumar2 (a, b) {
+      // body...
+      var rs;
+      rs =  a + b;
+      return rs;
+    }
+    
+    var resultado2 = sumar2(10, 10) ;
+    alert(resultado2); 
+
+//Funcion  que determina cual es el numero mayor
+    function mayor (a, b) {
+      // body...
+      if (a > b){ //Si a > b return a
+        return a;
+      }
+      else if (b > a)
+      { //Si b > a return b
+        return b;
+      }else{
+
+        return false;
+      }
+      }
+
+
+      //Si numero es mayor
+      var num = mayor(1,7);
+      alert(num);
+
+        //-->
+      </script>
+    </head>
+    <body>
+      <!--Escribimos mensaje para el caso de que el navegador no soporte Javascript o esté desactivado-->
+      <noscript>
+        <p>Tu Navegador no soporta Javascript</p>
+        <p>Trata de actualizar tu navegador o activarlo Javascript</p>
+      </noscript>
+    </body>
+    </html>

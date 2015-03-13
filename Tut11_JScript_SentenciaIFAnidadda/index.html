@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- Tutorial Javascript - 11 - Sentencia IF Anidada 
+      https://www.youtube.com/watch?v=z50BCH-3-EQ&list=PLBF55EAEDAA5938AA&index=11
+    -->
+    <html>
+    <head>
+      <title>Tuto Javascript</title>
+      <meta charset="UTF-8">
+      <script type="text/javascript">
+  //Comentario paran el navegador
+  //
+  <!-- 
+     /* 
+       Entre comentarios podemos poner:
+       Desarrollado por: eriDev 
+       Fecha: 11/03/2015
+       Aplicación que detecta si es mujer y mayor de edad, si es hombre y tiene x dinero
+       */
+
+        //Creo una variable 
+        var sexo = 'm'; edad = 15; dinero = 14500;
+       //Primera condicion, si se cumple...
+       if(sexo == 'f'){
+        //...entra en la siguiente condición y ejecuta...
+        if (edad ==18){
+          //...la orden imprimir
+          document.write("Es mujer y mayor de 18, puedes entrar. ");
+        }//Fin 2 if
+       
+        //En caso de que no se cumpla la primera y segunda condición...
+        else {
+          document.write("Ohhhh, no puedes entrar eres menor. ");
+        }//fin else 
+        }//Fin primer if
+       //Segunda condición
+       else if (sexo == 'm'){
+        //Condicion dentro de la 2 cond
+        if(dinero>=10000){
+          document.write("Ok, eres hombre y superas el importe, puedes entrar. ");
+          //Caso contrario de la segunda condición
+        
+      }else {
+          document.write("Lo siento, no puedes entrar... no tienes importe suficiente...");
+        }//Fin else
+       }//Fin if
+       else{
+        document.write("Lo siento, no puedes entrar, que eres?");
+      }
+      document.write("He salido del super condicional. ");
+
+
+          //-->
+        </script>
+      </head>
+      <body>
+        <!--Escribimos mensaje para el caso de que el navegador no soporte Javascript o esté desactivado-->
+        <noscript>
+          <p>Tu Navegador no soporta Javascript</p>
+          <p>Trata de actualizar tu navegador o activarlo Javascript</p>
+        </noscript>
+      </body>
+      </html>

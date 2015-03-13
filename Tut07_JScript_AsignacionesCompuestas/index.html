@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- Tutorial Javascript - 7 - Asignaciones Compuestas
+ https://www.youtube.com/watch?v=G9cVVsapljQ&index=7&list=PLBF55EAEDAA5938AA -->
+ <html>
+ <head>
+  <title>Tuto Javascript</title>
+  <meta charset="UTF-8">
+  <script type="text/javascript">
+   <!-- 
+     /* 
+       Entre comentarios podemos poner:
+       Desarrollado por: eriDev 
+       Fecha: 11/03/2015
+       */
+       var visitas = 0;
+      
+       /* Para realizar la asignacion compuesta, por ej para un contador,
+         incrementamos  o decrementar la cantidad con ++ ó -- en  1, 
+         pero si queremos incrementar en mas de uno, 
+         no hace falta realizar visitas = visitas +5 
+         incrementamos la cantidad q queremos, se puede realizar con cualquier operador -=, *=, /= */
+           
+         visitas +=  5; //Se añade 5 a visitas ahora vale 5
+         document.write(" Visitas vale: " + visitas);
+
+         visitas *=  5; //Se añade 5 a visitas ahora vale 5
+          document.write(" Visitas vale: " + visitas);
+         visitas /=  5; //Se añade 5 a visitas ahora vale 5
+          document.write(" Visitas vale: " + visitas);
+
+            visitas %=  5; //Se añade 5 a visitas ahora vale 5
+          document.write(" Visitas vale: " + visitas);
+          //-->
+        </script>
+      </head>
+      <body>
+        <!--Escribimos mensaje para el caso de que el navegador no soporte Javascript o esté desactivado-->
+        <noscript>
+          <p>Tu Navegador no soporta Javascript</p>
+          <p>Trata de actualizar tu navegador o activarlo Javascript</p>
+        </noscript>
+      </body>
+      </html>

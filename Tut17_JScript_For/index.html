@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- Tutorial Javascript - 17 - Ciclo For
+ https://www.youtube.com/watch?v=XtH7srlKP0o&list=PLBF55EAEDAA5938AA&index=17 -->
+  <html>
+  <head>
+    <title>Tuto Javascript</title>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+  //Comentario para indicar jScript al navegador
+ 
+  <!-- 
+     /* 
+       Entre comentarios podemos poner:
+       Desarrollado por: eriDev 
+       Fecha: 11/03/2015
+       Descripcion de Ciclo For:
+       Un ciclo es una sentencia que se repite según una condición, cuando queremos ejecutar mas de un codigo a la vez.
+       For es distinto de while, indicamos cuantas veces va a ejecutar ese codigo, le damos un inicio, cuantas veces y que vaya aumentando 
+       */
+       var n;
+       document.write("Inicio del for <br/>");
+       for ( n = 1; n <= 10; n++) {
+         document.write(n+"<br/>");
+       }
+         document.write("Fin del For<br/>");
+
+         //Imprimir solo los pares
+          var n = 1;
+       document.write("<br/>Inicio del for que imprime impares <br/>");
+       for (; n <= 10; n+=2) {
+         document.write(n+"<br/>");
+       }
+         document.write("Fin del For<br/>");
+        
+       
+    
+        //-->
+      </script>
+    </head>
+    <body>
+      <!--Escribimos mensaje para el caso de que el navegador no soporte Javascript o esté desactivado-->
+      <noscript>
+        <p>Tu Navegador no soporta Javascript</p>
+        <p>Trata de actualizar tu navegador o activarlo Javascript</p>
+      </noscript>
+    </body>
+    </html>

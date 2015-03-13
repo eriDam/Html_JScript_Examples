@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- Tutorial Javascript - 26 - Introducción Eventos onClick y onDblClick
+https://www.youtube.com/watch?v=ieynq7vaJFM&index=26&list=PLBF55EAEDAA5938AA
+-->
+<html>
+<head>
+  <title>Tuto Javascript</title>
+  <meta charset="UTF-8">
+  <script type="text/javascript">
+  //Comentario para indicar jScript al navegador
+  <!-- 
+     /* 
+       Entre comentarios podemos poner:
+       Desarrollado por: eriDev 
+       Fecha: 12/03/2015 
+       Los eventos son muy importantes, por lo cual utilizamos javascript, podemos saber cuando un  evento ocurre, cuando usuario hace click, cuando la pagina va a cerrarse, cuando mueve el raton, cuando cambia un texto, aprieta un botón
+       */
+        
+        function boton()
+        {
+          var nombre = "Pedro";
+          alert('Boton Pulsado');
+          alert('Otra vez');
+          alert(nombre);
+        }
+
+        //-->
+      </script>
+    </head>
+    <body>
+      <!--Escribimos mensaje para el caso de que el navegador no soporte Javascript o esté desactivado-->
+      <noscript>
+        <p>Tu Navegador no soporta Javascript</p>
+        <p>Trata de actualizar tu navegador o activarlo Javascript</p>
+      </noscript>
+        <!-- Creo un formulario con un botón, el evento se lo paso como un atributo mas onClick, puedo pasarle al evento mas sentencias, solo poniendo ; y dentro de sus "", para que no se nos cargue de código podemos realizar una función y llamarla desde el evento-->
+        <form>
+          <input type="button" name="bt"
+          onClick="boton()"
+          value = "Click Aquí" />
+
+          <input type="button" name="bt2"
+          onDblClick="boton()"
+          value = "Click Aquí" />
+        </form>
+    </body>
+    </html>

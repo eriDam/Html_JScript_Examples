@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- Tutorial Javascript - 27 - Eventos onMouseOver y onMouseOut
+
+ https://www.youtube.com/watch?v=3Y1XPzLiZbM&list=PLBF55EAEDAA5938AA&index=27&spfreload=1
+-->
+<html>
+<head>
+  <title>Tuto Javascript</title>
+  <meta charset="UTF-8">
+  <script type="text/javascript">
+  //Comentario para indicar jScript al navegador
+  <!-- 
+     /* 
+       Entre comentarios podemos poner:
+       Desarrollado por: eriDev 
+       Fecha: 12/03/2015 
+       El alcance de una variable es si es local o Global
+       */
+        //Funcion para el botón
+        function mensaje (tipo)
+        {
+          if (tipo == 1)
+           {
+            alert("Has entrado a la zona del botón")
+           }
+           else if (tipo ==2) 
+           {
+            alert("Has salido de la zona del botón")  
+           }
+        }
+        //-->
+      </script>
+    </head>
+    <body>
+      <!--Escribimos mensaje para el caso de que el navegador no soporte Javascript o esté desactivado-->
+      <noscript>
+        <p>Tu Navegador no soporta Javascript</p>
+        <p>Trata de actualizar tu navegador o activarlo Javascript</p>
+      </noscript>
+
+      <form>
+          <input type="button" name="boton" value = "Click Me"
+          onMouseOver="mensaje(1)" />
+
+          <input type="button" name="boton2" value = "Click Me" 
+            onMouseOut="mensaje(2)"/>
+    </body>
+    </html>

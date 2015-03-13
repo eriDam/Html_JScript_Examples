@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- Tutorial Javascript - 25 - Alcance de una variable
+https://www.youtube.com/watch?v=WCnb0dzAsQ0&index=25&list=PLBF55EAEDAA5938AA
+-->
+<html>
+<head>
+  <title>Tuto Javascript</title>
+  <meta charset="UTF-8">
+  <script type="text/javascript">
+  //Comentario para indicar jScript al navegador
+  <!-- 
+     /* 
+       Entre comentarios podemos poner:
+       Desarrollado por: eriDev 
+       Fecha: 12/03/2015 
+       El alcance de una variable es si es local o Global
+       */
+       
+       var numero = 10;
+       function mostrar_numero(numero)
+       {
+        //Creo una var dentro de la funcion, ser variable LOCAL, no se podrá utilizar fuera de la función
+        
+        numero = 20;
+        document.write("Variable local es: " + numero);
+      
+      }
+       
+       mostrar_numero();  
+       document.write("<br/>");
+       document.write("Variable Global es: " + numero);
+
+
+
+        //-->
+      </script>
+    </head>
+    <body>
+      <!--Escribimos mensaje para el caso de que el navegador no soporte Javascript o esté desactivado-->
+      <noscript>
+        <p>Tu Navegador no soporta Javascript</p>
+        <p>Trata de actualizar tu navegador o activarlo Javascript</p>
+      </noscript>
+    </body>
+    </html>

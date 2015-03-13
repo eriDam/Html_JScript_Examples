@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- Tutorial Javascript - 23 - Funciones
+  https://www.youtube.com/watch?v=CUasvVoP618&index=23&list=PLBF55EAEDAA5938AA 
+-->
+<html>
+<head>
+  <title>Tuto Javascript</title>
+  <meta charset="UTF-8">
+  <script type="text/javascript">
+  //Comentario para indicar jScript al navegador
+  <!-- 
+     /* 
+       Entre comentarios podemos poner:
+       Desarrollado por: eriDev 
+       Fecha: 12/03/2015
+       El typeof se utiliza para identificar el tipo de una variable
+       */
+      //Saltará un mensaje undefined si no le damos ningún valor
+      var a = 25;
+      alert( typeof a + " El valor es " + a ) ;
+        
+      //Funcion sumar dos variables
+      function sumar(c,d){
+        //Controlo que si me va a devolver undefined me muestre/return 0
+        if (typeof c == "undefined")  
+          c = 0;
+       
+        if (typeof d == "undefined")  
+          d = 0;
+       
+
+        if (typeof c == "number" && typeof d =="number")  
+           return c + d;
+    
+
+          //En caso contrario
+          return false; 
+      }
+
+      //Utilizo la funcion sumar correctamente
+      alert(sumar ( 3 ,  2 ));
+
+      //Utilizamos la funcion utilizando letras a ver si salta a false
+      alert(sumar ("h", "p"));
+      
+      //Prueba  undefined
+      var x, y;
+      alert(sumar (x ,y));
+      
+ 
+        //-->
+      </script>
+    </head>
+    <body>
+      <!--Escribimos mensaje para el caso de que el navegador no soporte Javascript o esté desactivado-->
+      <noscript>
+        <p>Tu Navegador no soporta Javascript</p>
+        <p>Trata de actualizar tu navegador o activarlo Javascript</p>
+      </noscript>
+    </body>
+    </html>

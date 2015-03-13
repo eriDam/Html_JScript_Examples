@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- Tutorial Javascript - 12 - Operador Ternario
+https://www.youtube.com/watch?v=yTzodMt21PY&index=12&list=PLBF55EAEDAA5938AA-->
+<html>
+<head>
+  <title>Tuto Javascript</title>
+  <meta charset="UTF-8">
+  <script type="text/javascript">
+  //Comentario paran el navegador
+  //
+  <!-- 
+     /* 
+       Entre comentarios podemos poner:
+       Desarrollado por: eriDev 
+       Fecha: 11/03/2015
+       Descripcion del operador ternario:
+           -Version corta del if y el else, con la difrencia que podemos asignarle ese valor a una variable según si es verdadero o falso
+       */
+
+        var edad = 17;
+        var mayor, mensaje;
+        //Operador ternario: Ponemos parentesis, interrogación:verdadero:falso
+        //()?:verdadero:falso
+        //
+        /* if (edad>=18)
+        {
+         // mayor = true;
+        }else{
+          mayor = false;
+        }*/
+        //Con el operador ternario quitamos el resto que había antes, lo que va despues del ? es el valor que va a tomar la variable, si es que si mayor representa verdadero y si es que no, representa false
+         mayor = (edad>=18)?true:false;
+         mensaje = (mayor)?"-Es mayor de edad" : "-Es menor de edad";
+
+         document.write(mensaje);
+         document.write("<br />");
+         
+
+
+        if (mayor) {
+          document.write("-Es mayor de edad, ");
+          document.write("<br />");
+        }else
+        {
+          document.write("-Es menor de edad...");
+          document.write("<br />");
+        }
+          document.write("-He salido del condicional :) ");
+
+
+          //-->
+        </script>
+      </head>
+      <body>
+        <!--Escribimos mensaje para el caso de que el navegador no soporte Javascript o esté desactivado-->
+        <noscript>
+          <p>Tu Navegador no soporta Javascript</p>
+          <p>Trata de actualizar tu navegador o activarlo Javascript</p>
+        </noscript>
+      </body>
+      </html>

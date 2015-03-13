@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- Tutorial Javascript - 18 - Control de Ciclo Break, Continue 
+  https://www.youtube.com/watch?v=FauIAZwaX70&index=18&list=PLBF55EAEDAA5938AA-->
+  <html>
+  <head>
+    <title>Tuto Javascript</title>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+  //Comentario para indicar jScript al navegador
+
+  <!-- 
+     /* 
+       Entre comentarios podemos poner:
+       Desarrollado por: eriDev 
+       Fecha: 11/03/2015
+       Descripcion de Break Sirve para el control de ciclo
+       */
+       var numero = 0;
+       var maximo = 10;
+       document.write("Inicio del While <br/>");
+       while(numero>=0){
+        document.write(numero+"<br/>");
+        numero++;
+        if (numero>maximo){
+            break;//indicamos que termine aquí el ciclo
+            document.write("Fin del while :) <br/>");
+          }
+        }
+
+        //Imprime solo los numeros pares
+        var numero2 = 0;
+        var maximo2 = 10;
+        document.write("<br/>Inicio del While2  <br/>");
+        while(numero2>=0){
+          if (numero2 % 2 == 0) {
+          document.write(numero2+"<br/>");
+          }//Fin if
+          numero2++;
+          if(numero2>maximo2){
+            break;
+          }//Fin if
+          } //Fin while
+          document.write("Fin del while2");
+
+        //-->
+      </script>
+    </head>
+    <body>
+      <!--Escribimos mensaje para el caso de que el navegador no soporte Javascript o esté desactivado-->
+      <noscript>
+        <p>Tu Navegador no soporta Javascript</p>
+        <p>Trata de actualizar tu navegador o activarlo Javascript</p>
+      </noscript>
+    </body>
+    </html>

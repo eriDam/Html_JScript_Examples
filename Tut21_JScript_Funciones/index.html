@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- Tutorial Javascript - 21 - Funciones
+  https://www.youtube.com/watch?v=PKYfBvLo09s&index=21&list=PLBF55EAEDAA5938AA-->
+  <html>
+  <head>
+    <title>Tuto Javascript</title>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+  //Comentario para indicar jScript al navegador
+  <!-- 
+     /* 
+       Entre comentarios podemos poner:
+       Desarrollado por: eriDev 
+       Fecha: 12/03/2015
+       Para realizar una funcion
+       */
+       
+       function bienvenida(){
+        var nombre;
+        nombre = prompt("¿Cómo te llamas?");
+        if (nombre != "" && nombre != null){
+          alert("Bienvenido!");
+        }else{
+          alert("Debes decir tu nombre!!");
+        }
+        
+      }
+
+      //Ejecutamos FUNCIÓN bienvenida
+      bienvenida();
+
+      //
+
+
+        //-->
+      </script>
+    </head>
+    <body>
+      <!--Escribimos mensaje para el caso de que el navegador no soporte Javascript o esté desactivado-->
+      <noscript>
+        <p>Tu Navegador no soporta Javascript</p>
+        <p>Trata de actualizar tu navegador o activarlo Javascript</p>
+      </noscript>
+    </body>
+    </html>

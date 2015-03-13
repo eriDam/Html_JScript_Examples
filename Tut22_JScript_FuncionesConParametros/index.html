@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- Tutorial Javascript - 21 - Funciones
+  https://www.youtube.com/watch?v=PKYfBvLo09s&index=21&list=PLBF55EAEDAA5938AA-->
+  <html>
+  <head>
+    <title>Tuto Javascript</title>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+  //Comentario para indicar jScript al navegador
+  <!-- 
+     /* 
+       Entre comentarios podemos poner:
+       Desarrollado por: eriDev 
+       Fecha: 12/03/2015
+       Para realizar una funcion
+       */
+      
+      //Función alerta
+       var nombre;
+       function alerta(a){
+        alert(a);  
+        }
+       
+      //Función solicitar nombre
+      function solicitar_nombre (por_defecto) {
+        // body...
+        var nombre = prompt("Escribe tu nombre", por_defecto);
+        if (nombre != null && nombre != "") {
+          alert("Bienvenid@ " + nombre);
+        }else{
+          alert("Debes escribir un nombre!!");
+        }
+        
+      }
+
+      //Función suma, mas de un parametro se separa con coma ,
+       function sumar(a,b){
+          var r = a + b;
+          alerta("Resultado de "+ a +" + " + b + " = " + r);
+       }
+
+      //UTILIZAMOS LAS FUNCIONES CREADAS
+      //llamamos a la funcion y le pasamos un parametro  hola....que se guardara en a
+       alerta("Hola que hay"); 
+     
+      //Solicitar nombre chica
+         solicitar_nombre("Nadia");
+         //Solicitar nombre chico
+         solicitar_nombre("Álvaro");
+
+      //Sumar
+      sumar(10,3);
+      sumar(2,5);
+
+
+        //-->
+      </script>
+    </head>
+    <body>
+      <!--Escribimos mensaje para el caso de que el navegador no soporte Javascript o esté desactivado-->
+      <noscript>
+        <p>Tu Navegador no soporta Javascript</p>
+        <p>Trata de actualizar tu navegador o activarlo Javascript</p>
+      </noscript>
+    </body>
+    </html>

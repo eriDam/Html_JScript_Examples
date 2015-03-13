@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- Tutorial Javascript - 10 - Sentencia ELSE-IF, al contrario que el uso 
+en el tutorial 9 anterior
+https://www.youtube.com/watch?v=Wgc8rSkiP5Q&index=10&list=PLBF55EAEDAA5938AA-->
+<html>
+<head>
+  <title>Tuto Javascript</title>
+  <meta charset="UTF-8">
+  <script type="text/javascript">
+  //Comentario paran el navegador
+  //
+  <!-- 
+     /* 
+       Entre comentarios podemos poner:
+       Desarrollado por: eriDev 
+       Fecha: 11/03/2015
+       */
+
+        //Creo una variable 
+        var numero = 15;
+       //Todas las comparaciones que podemos hacer
+       //a>b, a<b, a>=b, a<=b, a == b, a != b
+       //Con una sola linea, no necesita llaves, pero mejor ponerlas, en caso de que hayan mas de una hay que ponerlas
+       if (numero == 15){
+        document.write("He entrado en el primer if - La primera condición se ha cumplido. ");
+        document.write("El número es igual que 15. ");
+      }
+      else if (numero > 15) 
+      {
+        document.write("He entrado en el segundo if. - La segunda condición se ha cumplido. ");
+        document.write("El número es mayor que 15");
+      }
+      else if (numero < 15) 
+      {
+
+       document.write("En caso contrario numero, es menor que 15 ");
+       
+     }  
+     else
+     {
+       document.write("He entrado en el caso que es diferente a las 2 condiciones estipuladas. - Dentro de else. - No es un número...  ");
+         document.write("<br />");//Salto de línea
+       }
+       document.write("He salido del condicional. ");
+
+       //Ejemplo con numero positivos y negativos
+       
+       //Creo una variable 
+        var numero = -10;
+       //Todas las comparaciones que podemos hacer
+       //a>b, a<b, a>=b, a<=b, a == b, a != b
+       //Con una sola linea, no necesita llaves, pero mejor ponerlas, en caso de que hayan mas de una hay que ponerlas
+       if (numero == 1){
+        document.write("He entrado en el primer if - La primera condición se ha cumplido. ");
+        document.write("El número es positivo. ");
+      }
+      else if (numero > -1) 
+      {
+        document.write("He entrado en el segundo if. - La segunda condición se ha cumplido. ");
+        document.write("El número es negativo");
+      }
+      else if (numero < 0) 
+      {
+
+       document.write("En caso contrario numero neutro ");
+       
+     }  
+     else
+     {
+       document.write("He entrado en el caso que es diferente a las 2 condiciones estipuladas. - Dentro de else. - No es un número...  ");
+         document.write("<br />");//Salto de línea
+       }
+       document.write("He salido del condicional. ");
+
+
+          //-->
+        </script>
+      </head>
+      <body>
+        <!--Escribimos mensaje para el caso de que el navegador no soporte Javascript o esté desactivado-->
+        <noscript>
+          <p>Tu Navegador no soporta Javascript</p>
+          <p>Trata de actualizar tu navegador o activarlo Javascript</p>
+        </noscript>
+      </body>
+      </html>

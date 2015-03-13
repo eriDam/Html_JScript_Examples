@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- Tutorial Javascript - 6 - Operadores de Incremento
+  https://www.youtube.com/watch?v=UM946FtHWjo&list=PLBF55EAEDAA5938AA&index=4 -->
+  <html>
+  <head>
+    <title>Tuto Javascript</title>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+     <!-- 
+     /* 
+       Entre comentarios podemos poner
+       Desarrollado por: eriDev 
+       Fecha: 11/03/2015
+       */
+       var cantidad = 0, post;
+       cantidad = cantidad + 1; //Se añade 1 a cantidad ahora vale 1
+       cantidad = cantidad + 1; //asignamos 1 mas a la cantidad ahora vale 2 
+       //Esto se puede realizar
+       cantidad++; // ahora vale 3
+
+      //Colocamos  delante el incremento y aumenta igualmente
+      ++cantidad; //Ahora valdrá 4
+        //Podemos hacer operaciones con la variable numero1 y num2 igual que si fueran numeros
+        document.write("El resultado de la variable   cantidad es: "+ cantidad);//el resultado será 4 xq se ha incrementado 3 veces
+        document.write("- Preincremento antes de imprimir: Ahora el resultado es: ");
+        //Podemos incremetar mientras imprimimos
+        document.write(++cantidad); //Preincremento antes de impr
+        document.write("- PostIncremento despues de imprimir: El resultado es: ");
+        document.write(cantidad+++" todavía"); //PostIncremento: Incrementa despues de impr vale 6 después
+        document.write(" - Con el postincremento ya calculado vale: " + cantidad);
+
+        //Espacio en blanco
+                document.write(" - ");
+        post = ++cantidad; //post será igual a cantidad incrementada con lo cual es 7
+          document.write(post);
+
+
+          //Decremento
+          var cantidadDec = 0, post;
+       cantidad = cantidad - 1; //Se añade 1 a cantidad ahora vale -1
+        
+       //Esto se puede realizar
+       cantidad--; // ahora vale -2
+
+      //Colocamos  delante el incremento y aumenta igualmente
+      --cantidad; //Ahora valdrá -4
+
+        document.write(" - Con el decremento ya calculado vale: " + cantidadDec);
+ 
+          //-->
+     </script>
+   </head>
+   <body>
+    <!--Escribimos mensaje para el caso de que el navegador no soporte Javascript o esté desactivado-->
+    <noscript>
+      <p>Tu Navegador no soporta Javascript</p>
+      <p>Trata de actualizar tu navegador o activarlo Javascript</p>
+    </noscript>
+  </body>
+  </html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- Tutorial Javascript - 13 -  Operadores Logicos
+  https://www.youtube.com/watch?v=4palqqe6ihM&list=PLBF55EAEDAA5938AA&index=13-->
+  <html>
+  <head>
+    <title>Tuto Javascript</title>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+  //Comentario paran el navegador
+  //
+  <!-- 
+     /* 
+       Entre comentarios podemos poner:
+       Desarrollado por: eriDev 
+       Fecha: 11/03/2015
+       Descripcion de los operadores lógicos:
+       AND: &&  OR|| NOT !
+           -Se utilizan para poder comprobar mas de una expresión, en una sentencia de 
+           condición como el if
+           */
+
+           var sexo = 'f'; edad =18; dinero = 1500;
+           if (sexo == 'f' && edad >=18) 
+           {
+             document.write("Puedes entrar ");
+           }else if(sexo == 'h' && dinero >=1800){
+            document.write("No puedes entrar ");
+          }else{
+            if(sexo =='f'){
+              document.write("Lo siento no puedes");
+            }
+          }
+
+          var mayor = false; 
+       //AND, OR NOT 
+       //&&   ||  !
+       //Si no es  mayor , si lo contrario de true
+       
+       if(!mayor){
+        document.write("Es mayor");
+      }else{
+        document.write("Es menor");
+      }
+          //-->
+
+        </script>
+      </head>
+      <body>
+        <!--Escribimos mensaje para el caso de que el navegador no soporte Javascript o esté desactivado-->
+        <noscript>
+          <p>Tu Navegador no soporta Javascript</p>
+          <p>Trata de actualizar tu navegador o activarlo Javascript</p>
+        </noscript>
+      </body>
+      </html>
