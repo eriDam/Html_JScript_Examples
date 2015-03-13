@@ -17,10 +17,32 @@ https://www.youtube.com/watch?v=3TFGvu-ieUE&index=33&list=PLBF55EAEDAA5938AA
         Creamos un objeto number con new
        */
         var n = new Number(123);
-        document.write(n);
-        //Si queremos mostra el numero con otra base:
-        //BINARIO, OCTAL, DECIMAL...
+        document.write("El valor es: " + n);
+         document.write("<br/>");
+        //Si queremos mostrar el numero con otra base:
+        //BINARIO base 2, OCTAL 8, DECIMAL 10, HEXADECIMAL 16
         
+        //PARA CONVERTIR A BINARIO
+        var binario = n.toString(2);//Al pasarle 2 como parametro le decimo que lo coja como binario
+        document.write("Convertido a binario es: " + binario);
+         document.write("<br/>");
+
+        //PARA CONVERTIR A OCTAL
+        var octal = n.toString(8);
+        document.write("Convertido a Octal base 8 es: " + octal);
+        document.write("<br/>");
+
+        //PARA CONVERTIR A DECIMAL
+        var decimal = n.toString(10);
+        document.write("Convertido a decimal base 10 es: " + decimal);
+        document.write("<br/>");
+
+          //PARA CONVERTIR A HEXADECIMAL
+        var hexadecimal = n.toString(16);
+        document.write("Convertido a hexadecimal base 16 es: " + hexadecimal);
+        document.write("<br/>");
+
+
 
         //-->
       </script>
