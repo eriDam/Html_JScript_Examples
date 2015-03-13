@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- Tutorial Javascript - 30 - IntroduTutorial Javascript - 32 - Encontrar Posicion de Letras o Palabras
+https://www.youtube.com/watch?v=BzxbWgzVldk&index=32&list=PLBF55EAEDAA5938AA&spfreload=10
+-->
+<html>
+<head>
+  <title>Tuto Javascript</title>
+  <meta charset="UTF-8">
+  <script type="text/javascript">
+  //Comentario para indicar jScript al navegador
+  <!-- 
+     /* 
+       Desarrollado por: eriDev 
+       Fecha: 13/03/2015 
+       */
+     var mensaje = "Bienvenido";
+     //ponemos las palabras que queremos buscar
+     var buscar = "I";
+
+     //alert("La posición de i es la: "+ mensaje.indexOf("I"));
+     //alert("La posición de i es la: "+ mensaje.lastIndexOf("I"));
+      
+      //Creamos una función para buscar
+      function busqueda(mensaje, letra)
+      {
+       mensaje = mensaje.toLowerCase();//convierto el mensaje a minusculas ya que buscar es una mayuscula
+       letra = letra.toLowerCase(); 
+       alert(mensaje.indexOf(letra));
+       alert(mensaje.lastIndexOf(letra));
+      }
+
+      busqueda(mensaje, buscar);
+
+       //-->
+      </script>
+    </head>
+    <body>
+      <!--Escribimos mensaje para el caso de que el navegador no soporte Javascript o esté desactivado-->
+      <noscript>
+        <p>Tu Navegador no soporta Javascript</p>
+        <p>Trata de actualizar tu navegador o activarlo Javascript</p>
+      </noscript>
+   
+    
+       
+
+    </body>
+    </html>

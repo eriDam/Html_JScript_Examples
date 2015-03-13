@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- Tutorial Javascript - 30 - IntroduTutorial Javascript - 32 - Encontrar Posicion de Letras o Palabras
+https://www.youtube.com/watch?v=BzxbWgzVldk&index=32&list=PLBF55EAEDAA5938AA&spfreload=10
+-->
+<html>
+<head>
+  <title>Tuto Javascript</title>
+  <meta charset="UTF-8">
+  <script type="text/javascript">
+  //Comentario para indicar jScript al navegador
+  <!-- 
+     /* 
+       Desarrollado por: eriDev 
+       Fecha: 13/03/2015 
+       */
+     var mensaje = "Bienvenido";
+      //Nos da la posicion de la letra que queremos buscar que es la i, sacará la posición 1 ya que el indice comienza con 0
+      //Sensible a Mayusculas y minúsculas, si no encuentra la posición saca -1
+      alert("La posición de i es la: "+ mensaje.indexOf("i"));
+
+      //IndexOf acepta dos parámetros, el s2º es desde que posición quieres comenzar a buscar, comenzará desde la izquierda la  posición a buscar
+
+       alert("La posición de i es la: "+ mensaje.indexOf("i", 3));
+
+      //para buscar la ultima i que apareza en el String/mensaje
+      alert("La posición de i es la: "+ mensaje.lastIndexOf("i")); 
+
+      //También acepta dos parámetros, el  2º es desde que posición quieres comenzar a buscar, comenzará desde la derecha, última posición a buscar. Sensible a Mayusculas y minuscaulas, si no encuetra la posición saca -1
+
+      alert("La posición de i es la: "+ mensaje.lastIndexOf("i", 3));
+  
+        //-->
+      </script>
+    </head>
+    <body>
+      <!--Escribimos mensaje para el caso de que el navegador no soporte Javascript o esté desactivado-->
+      <noscript>
+        <p>Tu Navegador no soporta Javascript</p>
+        <p>Trata de actualizar tu navegador o activarlo Javascript</p>
+      </noscript>
+   
+    
+       
+
+    </body>
+    </html>
