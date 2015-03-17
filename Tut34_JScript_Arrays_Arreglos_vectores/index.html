@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- Tutorial Javascript - 34 - Crear Arrays/Arreglos/Vectores
+https://www.youtube.com/watch?v=I7ZY3EJ79N8&index=34&list=PLBF55EAEDAA5938AAA
+-->
+<html>
+<head>
+  <title>Tuto Javascript</title>
+  <meta charset="UTF-8">
+  <script type="text/javascript">
+  //Comentario para indicar jScript al navegador
+  <!-- 
+     /* 
+       Desarrollado por: eriDev 
+       Fecha: 13/03/2015 
+       Descripción:
+       Los arrays como ya sabemos sirven para almacenar mas de un valor que está relacionado en una variable
+
+       Ej. almacenar en el array todos los lenguajes que conocemos
+       */
+        var lenguajes = ["PHP","HTML5", "XHTML","XML", "JAVA","JAVASCRIPT","C++","C#","JSON","XQUERY", "SQL", "SQL SERVER", "SQLite", "MySQL"];
+
+        //Imprimimos el array
+        document.write(lenguajes);
+        document.write("<br/>");
+        document.write("<br/>");
+
+        //Imprimimos el array, pero controlando si existe esa posición
+        document.write("Imprimo posición:<br/>");
+        if (lenguajes[5] != undefined){
+           document.write(lenguajes[5]);
+           document.write("<br/>");
+        }
+        document.write("<br/>");
+
+       
+        //Otra forma recorrer o imprimir posición del array
+        var p = 4;//creo var para indicar la posición
+         document.write("Imprimo posición: " + p + "<br/>");
+        if (lenguajes[p] != undefined){
+           document.write(lenguajes[p]);
+           document.write("<br/>");
+        }
+
+        //Otra manera
+        var lenguajes2  = new Array(5);
+        lenguajes2 [0]  = "PHP";
+        lenguajes2  [1] = "HTML5";
+        lenguajes2  [2] = "XHTML";
+
+        //Si queremos mostrar la posición 3
+        var pos = 3;
+        document.write("<br/>");
+        document.write("<br/>Mostrar posicion 3 sin estar definida: <br/>");
+         // if (lenguajes[pos] != undefined){
+           document.write(lenguajes2[pos]);
+           document.write("<br/>");
+
+
+       
+         
+
+        //-->
+      </script>
+    </head>
+    <body>
+      <!--Escribimos mensaje para el caso de que el navegador no soporte Javascript o esté desactivado-->
+      <noscript>
+        <p>Tu Navegador no soporta Javascript</p>
+        <p>Trata de actualizar tu navegador o activarlo Javascript</p>
+      </noscript>
+   
+    
+       
+
+    </body>
+    </html>
